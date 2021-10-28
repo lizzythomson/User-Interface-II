@@ -107,16 +107,15 @@ section {
   display: block;
 }
 
+/*General Styles*/
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   max-width: 100%;
-  border: 1px solid grey;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", sans-serif;
 }
 
-/*General Styles*/
 html {
   font-size: 62.5%;
 }
@@ -130,83 +129,73 @@ body {
 header {
   display: flex;
   justify-content: space-between;
+  padding: 16px;
 }
 
-.mainProject {
-  height: 40vh;
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  margin: 2%;
-}
-
-.hero-banner {
-  background-image: url(https://images.unsplash.com/photo-1591105379517-39bc1b81bf2b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHV0YWh8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
-  background-position: center;
-  width: 100%;
-  max-height: 350 px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position-y: 35%;
-}
-
-.right {
-  align-items: flex-end;
-}
-
-h1 {
-  font-size: 7.5rem;
-  color: white;
-}
-
-h2 {
-  font-size: 2rem;
-}
-
-h3 {
+header h2 {
   font-size: 2.5rem;
 }
 
-.mainProject button {
-  font-size: 2rem;
+header nav {
+  display: flex;
 }
 
-a {
+header a {
+  padding: 4px 16px;
   text-decoration: none;
-  border: 1px;
-}
-
-button {
+  color: rgb(30, 58, 138);
+  font-size: 2rem;
   border: 1px solid black;
+  background-color: white;
 }
 
-button:hover {
+header a:active {
+  background: rgb(30, 58, 138);
   color: white;
-  background-color: lightskyblue;
-  text-decoration: bold;
+}
+
+.mainProject {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+}
+
+.mainImage {
+  background-image: url(https://images.unsplash.com/photo-1591105379517-39bc1b81bf2b?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTh8fHV0YWh8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position-y: 35%;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 4rem;
+  color: white;
+}
+
+.mainImage h1 {
+  margin-bottom: 8px;
+}
+
+.mainImage button {
+  padding: 8px 16px;
+  background-color: white;
+  border-radius: 4px;
+  border: none;
 }
 
 .projects {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 60vh;
   flex-wrap: wrap;
   align-content: space-around;
 }
 
-footer {
-  background-color: rosybrown;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.contactMe {
-  padding: 1.5%;
-  box-shadow: 0px 3px 8px rgb(0 0 0 / 24%);
-  border-radius: 8px;
+.project div {
+  height: 60vh;
 }
 
 .projects div {
@@ -223,13 +212,17 @@ footer {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  width: 55%;
-  height: 75%;
-  padding: 24 px 32 px;
+  width: 100%;
+  height: 40vh;
   box-shadow: 0px 3px 8px rgb(0 0 0 / 24%);
-  border-radius: 8 px;
-  box-shadow: 0px 3px 8px rgb(0 0 0 / 24%);
-  text-decoration: none;
+}
+
+.project-container {
+  text-align: center;
+}
+
+.projects h3 {
+  font-size: 3rem;
 }
 
 .project1 {
@@ -249,4 +242,32 @@ footer {
 }
 .project6 {
   background-image: url(https://images.unsplash.com/photo-1635377090186-036bca445c6b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=880&q=80);
+}
+
+footer {
+  background-color: rgb(30, 58, 138);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 16px;
+}
+
+footer > div {
+  text-align: center;
+}
+
+footer button {
+  padding: 8px 16px;
+  background: white;
+  font-size: 2rem;
+  border-radius: 4px;
+  border: none;
+  margin-bottom: 12px;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 4px;
+  font-size: 1.5rem;
 }
